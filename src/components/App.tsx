@@ -17,6 +17,7 @@ const modelFile = process.env.PUBLIC_URL + `/model/model.json`;
 modelWorker.loadModel(signatureFile, modelFile);
 
 function App() {
+  console.log("cole v1");
   // state for keeping track of our predictions -- map of {label: confidence} from running the model on an image
   const [predictions, setPredictions] = useState<
     { [key: string]: number } | undefined
